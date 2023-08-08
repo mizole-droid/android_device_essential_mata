@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1316
+TARGET_SCREEN_WIDTH := 1440
 
 # Boot control
 PRODUCT_PACKAGES += \
@@ -113,10 +113,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
-
-# Device settings
-PRODUCT_PACKAGES += \
-    DeviceSettings
 
 # Display
 PRODUCT_PACKAGES += \
@@ -211,11 +207,6 @@ PRODUCT_PACKAGES += \
 # Led packages
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.mata
-
-# LiveDisplay native
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.0-service-sysfs
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -403,10 +394,6 @@ PRODUCT_PACKAGES += \
 # Tracing
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service.pixel
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
